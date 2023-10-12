@@ -1,42 +1,109 @@
 * {
-    box-sizing: border-box;
-    border: 3px solid #000000;
+    box-sizing: content-box;
+    border: 1px solid var(--neon);
+
 }
-/*
+
 :root {
-    --outer-space: #33393f;
-    --bright-turquoise: #c3d12a;
-    --gin: #e0eae4;
-    --heliotrope: #e92def;
-  }
-  */
+  --void: #000000;
+  --air: #ffffffa1;
+  --water: #241dfb;
+  --sky: #0da4e5;
+  --light: #ffffff;
+  --neon: #c703e17c;
+}
+
+::selection {
+  background-color: var(--light);
+  color: var(--air);
+}
 
 body {
+  
+    line-height: 2;
+    background-color: var(--void);
     display: flex;
-    flex-direction: column;
-    line-height: 1.5;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+h1 {
+  position: relative;
+  margin-top: -20%;
+  display: inline-flex;
+  font-family: 'Trebuchet MS';
 }
 
 header {
-    padding: 60px;
-    text-align: left;
-    background: #13293d;
-    color: #ffffff;
+  
+    padding: 30px;
+    text-align: auto;
+    color: var(--air);
   }
 
-  button {
-    width: 250px;
-    margin: 0 .5%;
+  nav {
+    display: flex;
+    flex-direction: row-reverse;
     font-size: 150%;
-    color: #92a3a6;
-    background-color: #000000;
-    border: 3px solid #010550;
     cursor: pointer;
   }
+
+  main {
+
+  }
+
+  a {
+    color: var(--light)
+  }
+
+  #contact-me {
+    text-align: right;
+  }
+
+  #work {
+    text-align: right;
+  }
+
+  #about-me {
+    text-align: center;
+  }
+
+  p {
+    color: var(--sky);
+    line-height: 1.5;
+  }
+
+  h2 {
+    color: var(--air);
+    display: inline-flex;
+  }
+
+  footer {
+    color: var(--sky);
+  }
+
+  h3 {
+    text-align: right;
+  }
+
+  #hold {
+    text-align: left;
+  }
   
-  @media screen and (min-width: 768px) {
-    .alignment {
-      flex: 0 0 50%;
-      max-width: 50%;
+  @media screen and (max-width: 576px) {
+    section {
+      background: var(--sky);
     }
-}
+  }
+
+  @media screen and (max-width: 768px) {
+    footer {
+      background: var(--water);
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    body {
+      background: var(--light);
+    }
+  }
