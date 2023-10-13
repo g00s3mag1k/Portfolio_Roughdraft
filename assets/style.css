@@ -1,7 +1,5 @@
-* {
-    box-sizing: content-box;
-    border: 1px solid var(--neon);
-
+*  {
+  border: 1px solid var(--sky);
 }
 
 :root {
@@ -13,92 +11,58 @@
   --neon: #c703e17c;
 }
 
-::selection {
-  background-color: var(--light);
-  color: var(--air);
+.main-header {
+  background-color: var(--void) .6;
+  background-image: url();
+  background-blend-mode: multiply;
+  background-size: cover;
+  padding-bottom: 30px;
 }
 
 body {
-  
-    line-height: 2;
-    background-color: var(--void);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-h1 {
-  position: relative;
-  margin-top: -20%;
-  display: inline-flex;
-  font-family: 'Trebuchet MS';
+  background-color: var(--light);
 }
 
 header {
-  
-    padding: 30px;
-    text-align: auto;
-    color: var(--air);
-  }
+  color: var(--void);
 
-  nav {
-    display: flex;
-    flex-direction: row-reverse;
-    font-size: 150%;
-    cursor: pointer;
-  }
+}
 
-  main {
+a {
+  color: var(--void)
+}
 
-  }
+h1 {
+  padding: 20px;
+}
 
-  a {
-    color: var(--light)
-  }
+h2 {
+  color: var(--water);
+}
 
-  #contact-me {
-    text-align: right;
-  }
+nav {
+  padding: 30px;
+  text-align: right;
+  color: var(--void)
+}
 
-  #work {
-    text-align: right;
-  }
+p {
+  color: var(--void)
+}
 
-  #about-me {
-    text-align: center;
-  }
-
-  p {
-    color: var(--sky);
-    line-height: 1.5;
-  }
-
-  h2 {
-    color: var(--air);
-    display: inline-flex;
-  }
-
-  footer {
-    color: var(--sky);
-  }
-
-  h3 {
-    text-align: right;
-  }
-
-  #hold {
-    text-align: left;
-  }
+footer {
+  color: var(--void)
+}
   
   @media screen and (max-width: 576px) {
-    section {
-      background: var(--sky);
+    body {
+      background: var(--light);
     }
   }
 
   @media screen and (max-width: 768px) {
-    footer {
-      background: var(--water);
+    body {
+      background: var(--light);
     }
   }
   
