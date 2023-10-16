@@ -7,22 +7,27 @@
   --neon: #c703e17c;
 }*/
 
-* {
-  box-sizing: border-box;
+*  {
   font-family: 'Lucida Sans';
+  box-sizing: border-box;
+  border: 2px solid blue;
   }
 
-  html, body {
-    margin:0;
-    padding:0;
-    color: #ffffffa0;
+  body {
+    margin: 0;
+    line-height: 1.7;
   }
+
+main {
+  background-image: url("./images/abstract-blue.jpg");
+  border: 20px solid rgb(25, 139, 205);
+}
 
 header {
+  position: relative;
   background-image: url("./images/abstract-blue.jpg");
   background-size: cover;
   background-position: center ;
-  background-blend-mode: multiply;
   padding-bottom: 30px;
 }
 
@@ -35,28 +40,106 @@ a:hover {
   background-color: #646968df;
 }
 
-a {
-  display: inline-block;
+.main-header a {
   margin-inline: 20px;
   color: #ffffffa0;
   text-decoration: none;
 }
 
+.row {
+  width:100%;
+  overflow: hidden;
+}
+
+.aboutme-section {
+  margin-top: -20px;
+  border: 20px solid rgb(25, 139, 205);
+  top: 20px;
+  padding-left: 20px;
+  width: 65%;
+  float: left
+}
+
+.aboutme-section .h2 {
+  text-align: left;
+}
+
+.aboutme-section img {
+  float: left;
+  margin-left: auto;
+}
+
+.aboutme-section p {
+  margin-top: -34px;
+}
+
+
+.work-section {
+  padding-left: 20px;
+  background-size: cover;
+  background-position: center ;
+  width: 65%;
+  float: left;
+  border: 20px solid rgb(25, 139, 205);
+}
+
+img {
+  display: block;
+  width: 250px;
+  height: auto;
+}
+
+.right-column {
+position: relative;
+float: right;
+width: 35%;
+padding-left: 20px;
+background-image: url("./images/contact-us-pic.jpg");
+background-size: cover;
+background-position: center ;
+top: -466px;
+margin: 0;
+}
+
+.right-column p {
+  display:inline-block;
+  color: #ffffff;
+}
+
+.resume-section a, .work-section a {
+  position: relative;
+  color:rgb(255, 255, 255);
+}
+
+.resume-section {
+  width: 65%;
+  float: left;
+  border: 2px solid blue;
+  padding-left: 20px;
+  border: 20px solid rgb(25, 139, 205);
+}
+
 h1 {
-  display: inline;
   color: #ffffffa0;
   font-size: 300%;
   margin: 0;
+  display: inline-block;
 }
 
 h2 {
   color: #0da4e5;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 40px;
 }
 
 p {
-  color: blue;
+  display: block;
+  color: rgb(255, 255, 255);
 }
 
 footer {
-  color: beige
+  text-align: center;
+  padding-top: 20px;
+  color: darkblue;
 }
